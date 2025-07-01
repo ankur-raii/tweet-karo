@@ -36,7 +36,7 @@ pip install -r requirements.txt
 pip freeze > requirements.txt
 ```
 
-### 4. Run the project (in
+### 4. Run the project (at the local server)
 ```bash
 cd tweetPost
 python manage.py runserver
@@ -46,6 +46,7 @@ python manage.py runserver
 If the error is showing pillow is not installed, then install it again in 
 cd tweetPost  
 
+### Finally the project will run. Enjoy it.
 
 
 
