@@ -43,8 +43,17 @@ python manage.py runserver
 ```
 
 ### NOTE:
-If the error is showing pillow is not installed, then install it again in 
+## 1. If django is not installed using requirements, then install
+```bash
+cd tweet-karo
+pip install django
+```
+
+## 2. If the error is showing pillow is not installed, then install it again in 
+```bash
 cd tweetPost  
+python -m pip install Pillow
+```
 
 ### Finally the project will run. Enjoy it.
 
