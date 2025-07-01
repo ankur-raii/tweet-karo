@@ -1,7 +1,20 @@
+# 🐦 Mini Tweet App (Django)
+
+This is a simple Twitter-like web application built using Django. It allows users to register, log in, create and view tweets. Users can see other users' tweets, but cannot modify or delete them — preserving authorship integrity.
+
+---
+
+## ✨ Features
+
+- ✅ User Registration
+- ✅ User Login / Logout
+- ✅ Create and post tweets
+- ✅ View tweets from all users
+- ❌ No edit/delete access to others’ tweets
+- 🧾 Clean and minimal UI using Django templates
+
+---
 # Django Project Setup Guide
-
-This guide explains how to clone this repository, set up a virtual environment, and install all required dependencies including Django.
-
 ---
 
 ## Getting Started
@@ -42,14 +55,14 @@ cd tweetPost
 python manage.py runserver
 ```
 
-### NOTE:
-## 1. If django is not installed using requirements, then install
+## NOTE:
+### 1. If django is not installed using requirements, then install
 ```bash
 cd tweet-karo
 pip install django
 ```
 
-## 2. If the error is showing pillow is not installed, then install it again in 
+### 2. If the error is showing pillow is not installed, then install it again in 
 ```bash
 cd tweetPost  
 python -m pip install Pillow
