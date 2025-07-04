@@ -13,6 +13,6 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: tweetPost.settings
       - key: SECRET_KEY
-        generate: true
+        value: changeme-in-prod
       - key: DEBUG
         value: "False"
