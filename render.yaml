@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: tweet-karo
+    env: python
+    plan: free
+    rootDir: tweetPost
+    buildCommand: |
+      pip install -r ../requirements.txt
+      python manage.py migrate --no-input
+      python manage.py collectstatic --no-input
+    startCommand: gunicorn tweetPost.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: tweetPost.settings
+      - key: SECRET_KEY
+        generate: true
+      - key: DEBUG
+        value: "False"
